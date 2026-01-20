@@ -1,0 +1,5 @@
+print("WELCOME TO BRAND NAME GENERATOR")
+city=input("please enter the name of city you were grew up:\n")
+pet_name=input("please enter your pet name:\n")
+brand_name=city+" "+pet_name
+print(f"your brand name could be:{brand_name}")
