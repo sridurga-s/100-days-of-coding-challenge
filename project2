@@ -1,1 +1,6 @@
-print("WELCOME TO )
+print("WELCOME TO TIP GENERATOR")
+bill=int(input("enter the amount of total bill:\n"))
+tip=int(input("if you like to give percent of amount as tip it would be 4 ,5 or 8 \n:"))
+person=int(input("enter the number of people thr amount should be shared:\n"))
+amount=((tip/100)*bill+bill)/person
+print(f"the amount to be paid by eacg one is:{amount}")
