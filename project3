@@ -10,7 +10,7 @@ if option1=="r":
         option3=input("you arrived at the island unharmed" \
         " there is a house with three coloured door" \
         " first door with blue second dooor with red and third door with yellow" \
-        " type 'b' for  choosing blue 'r' for choosing red 'y' for choosing yellow").lower()
+        " type 'b' for  choosing blue 'r' for choosing red 'y' for choosing yellow\n").lower()
         if option3=="b":
             print("you entered room of beasts.GAME OVER!")
         elif option3=="y":
