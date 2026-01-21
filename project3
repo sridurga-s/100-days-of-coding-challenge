@@ -1,0 +1,26 @@
+print("WELCOME TO TREASURE ISLAND")
+
+option1=input("your\'e at a crossroad would you like to choose left or right type 'r' for right and 'l' for left:\n").lower()
+if option1=="r":
+    option2=input("you\'ve come to a" \
+                "there is a island in middle of lake " \
+                "would you like to wait or swim"
+                "for waiting type 'w' for swimming type 's'\n").lower()
+    if option2=="w":
+        option3=input("you arrived at the island unharmed" \
+        " there is a house with three coloured door" \
+        " first door with blue second dooor with red and third door with yellow" \
+        " type 'b' for  choosing blue 'r' for choosing red 'y' for choosing yellow").lower()
+        if option3=="b":
+            print("you entered room of beasts.GAME OVER!")
+        elif option3=="y":
+            print("you found the treasure.YOU WIN!")  
+        elif option3=="r":
+            print("you enteres a room full of fire.GAME OVER!")       
+        else:
+            print("room doesn't exists for the name you choosed")
+    else:
+        print("you were attacked by the trout.GAME OVER!")
+
+else:
+    print("you fell into a hole.Game over!")    
