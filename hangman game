@@ -1,4 +1,5 @@
 import random
+
 stages = [r'''
   +---+
   |   |
@@ -55,20 +56,21 @@ stages = [r'''
       |
 =========
 ''']
+lives = 6
 word_list = ["aardvark", "baboon", "camel"]
-choosen_word=random.choice(word_list)
+choosen_word = random.choice(word_list)
 print(choosen_word)
-word_length=len(choosen_word)
-placeholder=""
+word_length = len(choosen_word)
+placeholder = ""
 for i in range(word_length):
-    placeholder+="_"
-print(placeholder) 
-corrected_letters=[]
-game_over=False
+    placeholder += "_"
+print(placeholder)
+corrected_letters = []
+game_over = False
 
 while not game_over:
-    guess=input("guess the letter:").lower()
-    display=""
+    guess = input("guess the letter:").lower()
+    display = ""
     for letter in choosen_word:
         if letter == guess:
             display += guess
@@ -77,11 +79,16 @@ while not game_over:
             display += letter
         else:
             display += "_"
- 
+    print(display)
 
-
- 
-    print(display) 
+    if guess not in choosen_word:
+        lives -= 1
+        print("wrong guess")
+        if guess == 0:
+            game_over = True
+            print("you lose")
     if "_" not in display:
-        game_over=True
-        print("you win")               
+        game_over = True
+        print("you win")
+    print(stages[lives])
+
